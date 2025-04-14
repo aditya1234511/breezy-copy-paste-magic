@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,20 +36,16 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom fonts */
+    font-family: 'Inter', sans-serif;
   }
 
   .dark {
@@ -98,4 +95,26 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.leave-card {
+  @apply relative p-4 rounded-lg mb-4 overflow-hidden;
+}
+
+.leave-card .leave-tag {
+  @apply absolute top-0 left-0 w-full h-2;
+}
+
+.leave-card .leave-initials {
+  @apply text-2xl font-bold mb-2;
+}
+
+.leave-card .leave-stats {
+  @apply flex justify-between items-center text-sm;
+}
+
+.leave-card .leave-stat-value {
+  @apply font-semibold text-right;
 }

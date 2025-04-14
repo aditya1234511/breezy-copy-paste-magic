@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our leave types
+				sickLeave: {
+					light: '#D3E4FD',
+					DEFAULT: '#9ECDF8',
+					dark: '#5BA3E8'
+				},
+				leaveWithoutPay: {
+					light: '#FDE1D3',
+					DEFAULT: '#FEC6A1',
+					dark: '#F9A36F'
+				},
+				earnedLeave: {
+					light: '#FEF7CD',
+					DEFAULT: '#FEEB99',
+					dark: '#FCD94F'
+				},
+				maternityLeave: {
+					light: '#E5DEFF',
+					DEFAULT: '#C7BFFF',
+					dark: '#9B87F5'
+				},
+				halfDayLeave: {
+					light: '#FDE1D3',
+					DEFAULT: '#FEC6A1',
+					dark: '#F9A36F'
 				}
 			},
 			borderRadius: {
